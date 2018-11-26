@@ -4,13 +4,25 @@
 <title>Page Title</title>
 </head>
 <body>
-
+ <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href=".">My Website</a>
+        </div>
+          <ul class="nav navbar-nav">
+            <li {% if active_page == "LB to KG" %} class="active" {%endif%}><a href=".">LB to KG</a></li>
+            <li {% if active_page == "G to OZ" %} class="active" {%endif%}><a href="/Page2">G to OZ</a></li>
+            <li {% if active_page == "IB to G" %} class="active" {%endif%}><a href="/Page3">IB to G</a></li>
+          </ul>
+      </div>
+    </nav>
 <h1>Its about cars</h1>
 
 <p> Electric motor horsepower can be determined from the electrical input in watts.</p>
 <p> Miles per gallon is tested by EPA, the EPA is a federal company that does most of the testing for MPG. They are always changing their methods but the had mostly used circle cycles where they drive cars around in a circle for a certain amount of time. They drive the cars under different circumstances <img src="car.webp">  </p>
-<p>https://jalopnik.com/how-fuel-economy-is-measured-and-why-you-get-different-1716232721                                                            
-https://www.britannica.com/science/horsepower </p>
+<p>https://jalopnik.com/how-fuel-economy-is-measured-and-why-you-get-different-1716232721  </p>                                               
+<p>https://www.britannica.com/science/horsepower </p>
+  
 </body>
 </html>
 
