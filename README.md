@@ -2,4 +2,6 @@
 
 the avergae mpg in highway and city of every car from each year and graph it 
 
-MVP: the lowest mpg in highway and city from each year also give the model
+
+MVP: Nav bar and reseach,
+the lowest mpg in highway and city from each year also give the model
