@@ -1,0 +1,57 @@
+{% extends "template.html"%}
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<title>{% block titile %} {% endblock%}</title>
+</head>
+<body>
+
+<h1>Its about cars</h1>
+ {% block content%}
+
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light8",
+	title:{
+		text: "Lowest MPG Graph"
+	},
+	axisY:{
+		title: "Highway Mpg",
+		
+	},
+	axisX:{
+		valueFormatString: "YYYY",
+		title: "Year's of cars",
+		interval: 1,
+		 intervalType: "year"
+
+	},
+	data: [{        
+		type: "spline",     	 	 
+		xValueFormatString: "YYYY",
+		dataPoints: 
+		[
+			{ x: new Date(2009,0), y: 16 },
+			{ x: new Date(2010,0), y: 12 },
+			{ x: new Date(2011,0), y: 11},
+			{ x: new Date(2012,0), y: 11}
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+<div id="chartContainer" style="height: 380px; width: 90%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+<footer>
+  <p style = "font-size:100%;"><b>Footer</b><br></footer>
+  {% endblock%}
+
+
+</html>
+

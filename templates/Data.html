@@ -1,0 +1,31 @@
+{% extends "template.html"%}
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<title>{% block titile %} {% endblock%}</title>
+</head>
+<body>
+
+<h1>Its about cars</h1>
+ {% block content%}
+<p class = "body"> Data
+
+Want to find MPG & City MPG?
+
+<form action="/Data">
+  <select name="list">
+  {{ list }}
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+<P> The highway MPG of = {{mpg}}
+ </p>
+</body>
+<footer>
+  <p style = "font-size:100%;"><b>Footer</b><br></footer>
+  {% endblock%}
+
+
+</html>
+

@@ -1,0 +1,29 @@
+footer {
+	position: fixed;
+    background-color: #999;
+    padding: 9px;
+    text-align: center;
+	font-size:70%;
+    color: white;
+	bottom: 0%;
+	right: 0px;
+	left: 0px;
+	height: 8%
+	}
+.body{
+	padding: 30px;
+	margin: 30px;
+    text-align: center;
+    color: black;
+	margin-left:10%;
+	margin-right:10%;
+	font-size:100%;
+	font-weight: 700;
+	}
+form {
+    text-align: center;
+	font-size:100%;
+	font-weight: 700;
+	padding: 25px;
+	margin: 25px;
+	}
